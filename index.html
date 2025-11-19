@@ -1,0 +1,83 @@
+<!--Dejeme aclarar que me guie con el codigo de la pagina original y debido a eso copie las clases e id para no confundirme al estudiar y entender cada parte  del codigo 
+es decir si cambiaba el id despues perdia mucho tiempo buscando cual era el nombre de la clase original y donde estaba llamada en el css, js etc. 
+aun asi corregi y agregue algunas funciones como tema oscuro y volumen en el video
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="/style.css">
+    <link rel="icon" href="/Documento-Proyecto/assets/imagenes/logo.png">
+    <title>Proyecto Final</title>
+</head>
+<body class="body-day" onscroll="navChange()">
+    <nav>
+        <a href='/'>
+        
+        <svg  width="200" height="90" >
+            <rect x="45" y="5" width="80" height="50"  class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2"></rect>
+            <rect x="50" y="10" width="70" height="40"  class="mon2" fill="#000000" stroke="#2F3645" stroke-width="2"></rect>
+            <rect x="75" y="55" width="20" height="10"  class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2"></rect>
+
+            <polygon points="50 70,120 70 ,130 80,40 80" fill="#767a81de" stroke="#2F3645" stroke-width="2" class="mon1"></polygon>
+            <polygon points="55 72,115 72  ,122 78,48 78" fill="#000000" class="mon2" stroke="#2F3645" ></polygon>
+
+            <line x1="55" y1="19" x2="100" y2="19" stroke="transparent" stroke-width="3" class="cod"></line>
+            <line x1="55" y1="24" x2="100" y2="24" stroke="transparent" stroke-width="3" class="cod"></line>
+            <line x1="55" y1="29" x2="70" y2="29" stroke="transparent" stroke-width="3" class="cod"></line>
+
+            <line x1="55" y1="33" x2="115" y2="33" stroke="transparent" stroke-width="3" class="cod"></line>
+            <line x1="55" y1="38" x2="115" y2="38" stroke="transparent" stroke-width="3" class="cod"></line>
+        </svg>
+</a>
+
+<ul class="menu">
+    <li class="item-menu"><a class='item-link' href='/PaginaHistoria.html'>HISTORIA</a></li>
+    <li class="item-menu"><a class='item-link' href='/PaginaJuego.html'>JUGUEMOS</a></li>
+    <li class="item-menu">
+        <a class="item-link" onclick="desplegar()">TEMA</a> 
+        <ul class="tema" id="menuTema">
+            <li id="tema_dia" class="item-submenu" onclick="temaDia()">DIA</li>
+            <li id="tema_noche" class="item-submenu" onclick="temaNoche()">NOCHE</li>
+        </ul>
+    </li>
+</ul>
+</nav>
+<header>
+        <h1 class="titulo-blanco">PROGRAMACION E HISTORIA</h1> 
+        
+    </header>
+<main>
+
+        <h2>CONTENIDO</h2>   
+        <section class="cont-padre">
+            <!-- cards categorias -->
+                <div class="card" id="card1">
+                    <img class="img-card" src="/Documento-Proyecto/assets/imagenes/historia-programacion.jpg" alt="imagen=producto">
+                    <p class="desc-card">Conozcamos un poco sobre la historia de la programacion </p>
+                    <a class='boton-ver' href='/PaginaHistoria.html' >Ir a Historia</a>
+                </div>
+
+                    <div class="card" id="card2">
+                        <img class="img-card" src="/Documento-Proyecto/assets/imagenes/img2.jpg" alt="imagen=producto">
+                        <p class="desc-card">Vamos a jugar un poco utilizando metodos aprendidos en clase</p>
+                        <a class='boton-ver' href='/PaginaJuego.html' >Ir a juego</a>
+                    </div>
+                    
+        </section>
+
+</main>
+
+<footer>
+        <div class="footer-left">
+        <img class="logo" src="/Documento-Proyecto/assets/imagenes/logo.png" alt="logo">
+            <h3 class="titulo-blanco titulo-foot">PROGRAMACION <br> E <br> HISTORIA </h3>
+        </div>
+        <div>Sitio con fines educativos - Creado por Tomas V. Astudillo</div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+

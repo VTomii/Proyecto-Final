@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="Documento-Proyecto/assets/imagenes/logo.png" >
+    <title>Proyecto-Final</title>
+</head>
+<body class="body-day" onscroll="navChange()">
+    <nav>
+        <a href='/'>
+            <svg  width="200" height="90" >
+                <rect x="45" y="5" width="80" height="50"  class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2"></rect>
+                <rect x="50" y="10" width="70" height="40"  class="mon2" fill="#000000" stroke="#2F3645" stroke-width="2"></rect>
+                <rect x="75" y="55" width="20" height="10"  class="mon1" fill="#767a81de" strok="#2F3645" stroke-width="2"></rect>
+
+                <polygon points="50 70,120 70 ,130 80,40 80" fill="#767a81de" stroke="#2F3645" stroke-width="2" class="mon1"></polygon>
+                <polygon points="55 72,115 72  ,122 78,48 78" fill="#000000" class="mon2" stroke="#2F3645" ></polygon>
+
+                <line x1="55" y1="19" x2="100" y2="19" stroke="transparent" stroke-width="3" class="cod"></line>
+                <line x1="55" y1="24" x2="100" y2="24" stroke="transparent" stroke-width="3" class="cod"></line>
+                <line x1="55" y1="29" x2="70" y2="29" stroke="transparent" stroke-width="3" class="cod"></line>
+
+                <line x1="55" y1="33" x2="115" y2="33" stroke="transparent" stroke-width="3" class="cod"></line>
+                <line x1="55" y1="38" x2="115" y2="38" stroke="transparent" stroke-width="3" class="cod"></line>
+            </svg>
+            </a>
+<ul class="menu">
+    <li class="item-menu"><a class='item-link' href='/PaginaHistoria.html'>HISTORIA</a></li>
+    <li class="item-menu"><a class='item-link' href='/PaginaJuego.html'>JUGUEMOS</a></li>
+    <li class="item-menu">
+        <a class="item-link" onclick="desplegar()">TEMA</a> 
+        <ul class="tema" id="menuTema">
+            <li id="tema_dia" class="item-submenu" onclick="temaDia()">DIA</li>
+            <li id="tema_noche" class="item-submenu" onclick="temaNoche()">NOCHE</li>
+        </ul>
+    </li>
+</ul>
+    </nav>
+    <header id="header-3">
+        <h1 class="titulo-blanco fondo-azul" > JUGUEMOS UN POCO </h1> 
+        
+    </header>
+
+    <main>
+    <h2 class="espacio-titulo">Armemos el rompecabezas y veamos que imagen es...</h2>
+
+        <section class="juego">
+            
+            <div id="seccion-superior">
+                <img class="imagenes" id="imagen1" src="/Documento-Proyecto/assets/imagenes/Rompe2.png" alt="imagendelrompecabezas" />                
+                <div class="cajas" >
+                    <div class="caja cajaHover" id="cajasoltar">
+                        <p>Arrastre y suelte la imagen aqui</p>
+                    </div>
+                    <div class="caja cajaHover" id="cajasoltar2">
+                        <p>Arrastre y suelte la imagen aqui</p>
+                    </div>
+                    <div class="caja cajaHover" id="cajasoltar3">
+                        <p>Arrastre y suelte la imagen aqui</p>
+                    </div>
+                </div>
+                <img class="imagenes" id="imagen2" src="/Documento-Proyecto/assets/imagenes/Rompe1.png" alt="imagendelrompecabezas" />
+            </div>
+            
+            <div id="seccion-inferior">
+                <img class="imagenes" id="imagen3" src="/Documento-Proyecto/assets/imagenes/Rompe3.png" alt="imagendelrompecabezas" />                
+            </div>
+
+
+
+        </section>
+        <button onclick="reinicio()" class="botonesVideo reinicio" >Reiniciar</button>
+
+    </main>
+    <script src="/script_Juego.js"></script>
+</body>
+</html>
