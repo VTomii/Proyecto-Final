@@ -116,12 +116,8 @@ async function soltado(e){
             setTimeout(()=>{
                 for(let caja of cajitas){
                     caja.style.opacity="0.7";
-                }
-                document.querySelector(".espacio-titulo").innerHTML=`Lo sentimos, Puzzle no resuelto.<br/>Prueba otra vez <img width="50px" src="Documento-Proyecto/assets/imagenes/iconodejuego.png"/>`; 
-                document.querySelector(".espacio-titulo").style="animation:feliz 3s forwards; z-index:3;position:relative;color:white; text-shadow: 2px 2px #808080, 6px 6px black";
-                document.querySelector(".cajas").style="background-color:#000000;transform:scale(1);gap:0"
+            }
             },5000)
-
         }
     }
 
